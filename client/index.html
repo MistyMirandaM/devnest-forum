@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevNest</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">DevNest</h1>
+
+    <div id="loginView" class="card">
+      <h2>Login</h2>
+      <div id="loginError" class="error"></div>
+      <input id="loginUsername" placeholder="Username" />
+      <input id="loginPassword" placeholder="Password" type="password" />
+      <button id="loginBtn">Login</button>
+      <p class="link"><a href="#" id="goRegister">Create account</a></p>
+    </div>
+
+    <div id="registerView" class="card hidden">
+      <h2>Register</h2>
+      <div id="registerError" class="error"></div>
+      <input id="regUsername" placeholder="Username (min 3 chars)" />
+      <input id="regPassword" placeholder="Password (8+ and a number)" type="password" />
+      <input id="regConfirm" placeholder="Confirm password" type="password" />
+      <label class="checkbox">
+        <input id="regTerms" type="checkbox" />
+        I accept the terms
+      </label>
+      <button id="registerBtn">Register</button>
+      <p class="link"><a href="#" id="goLogin">Back to login</a></p>
+    </div>
+
+    <div id="dashboardView" class="card hidden">
+      <div class="row">
+        <h2>Dashboard</h2>
+        <button id="logoutBtn" class="ghost">Logout</button>
+      </div>
+      <p id="welcomeText"></p>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
